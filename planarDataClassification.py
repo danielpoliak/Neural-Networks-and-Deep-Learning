@@ -375,7 +375,6 @@ plt.title("Decision Boundary for hidden layer size " + str(4))
 predictions = predict(parameters, X)
 print ('Accuracy: %d' % float((np.dot(Y,predictions.T) + np.dot(1-Y,1-predictions.T))/float(Y.size)*100) + '%')
 
-# This may take about 2 minutes to run =>  different behaviors of the model for various hidden layer sizes.
 
 plt.figure(figsize=(16, 32))
 hidden_layer_sizes = [1, 2, 3, 4, 5, 20, 50]
